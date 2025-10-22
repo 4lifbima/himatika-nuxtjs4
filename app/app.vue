@@ -12,7 +12,7 @@ useHead({
   titleTemplate: (titleChunk) => {
     // Ini akan membuat judul halaman dinamis
     // Contoh: "Tentang Kami - HMMatika"
-    return titleChunk ? `${titleChunk} - HMMatika` : 'HMMatika - Himpunan Mahasiswa Matematika';
+    return titleChunk ? `${titleChunk} - HIMATIKA` : 'HIMATIKA - Himpunan Mahasiswa Matematika';
   },
   meta: [
     { name: 'description', content: 'Website resmi Himpunan Mahasiswa Matematika. Eksplorasi Simetri Tak Terbatas.' }
