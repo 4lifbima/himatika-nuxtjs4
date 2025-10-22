@@ -93,7 +93,7 @@ const postData = computed(() => {
     post_content: post.content.rendered,
     post_image: post._embedded?.['wp:featuredmedia']?.[0]?.source_url || null,
     post_date: post.date,
-    post_url: `https://himatika-nextjs.vercel.app/blog/${post.slug}`
+    post_url: `https://himatika-nuxtjs.vercel.app/blog/${post.slug}`
   }
 })
 
