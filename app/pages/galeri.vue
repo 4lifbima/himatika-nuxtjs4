@@ -11,7 +11,7 @@
       </div>
       
       <div class="mt-16 grid grid-cols-2 grid-rows-2 gap-4 md:grid-cols-4">
-        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzg5NTN8&ixlib=rb-4.0.3&q=80&w=1080" 
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzg5Nzh8&ixlib=rb-4.0.3&q=80&w=1080" 
              alt="Foto Galeri 1" 
              class="col-span-2 row-span-2 h-full w-full rounded-2xl object-cover shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/30">
         <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzg5Nzh8&ixlib=rb-4.0.3&q=80&w=1080" 

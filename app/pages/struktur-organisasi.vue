@@ -8,7 +8,7 @@
           Struktur Organisasi
         </h2>
         <p class="mt-4 text-lg text-slate-600">
-          Kenali tim yang berdedikasi di balik layar HMMatika.
+          Kenali tim yang berdedikasi di balik layar HIMATIKA.
         </p>
       </div>
 

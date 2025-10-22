@@ -3,12 +3,13 @@
     <!-- =============================== -->
     <!--          HERO SECTION           -->
     <!-- =============================== -->
+    <!-- ... (KODE HERO SECTION ANDA, TIDAK BERUBAH) ... -->
     <section id="beranda" class="relative overflow-hidden pt-24 lg:pt-32">
       <!-- (Kode Hero Section Anda yang sudah ada... biarkan saja) -->
       <div class="absolute -top-1/4 left-0 -z-10 h-full w-full opacity-30 [mask-image:radial-gradient(circle_at_center,white,transparent)]">
         <div class="absolute inset-0 bg-gradient-to-br from-primary/30 via-white to-white"></div>
       </div>
-      <div class="container mx-auto grid grid-cols-1 items-center gap-12 px-4 lg:grid-cols-2 lg:px-8 mb-6">
+      <div class="container mx-auto grid grid-cols-1 items-center gap-12 px-4 lg:grid-cols-2 lg:px-8">
         <div class="py-12 text-center lg:text-left">
           <h1 class="font-display text-5xl font-extrabold tracking-tighter text-slate-900 md:text-6xl lg:text-7xl">
             Eksplorasi
@@ -31,7 +32,7 @@
         </div>
         <div class="hidden lg:block">
           <img 
-            src="/icon-himatika.png" 
+            src="https://images.unsplash.com/photo-1596496181848-3013d4405a40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzg3NDZ8&ixlib=rb-4.0.3&q=80&w=1080" 
             alt="Ilustrasi Matematika Abstrak" 
             class="h-full w-full rounded-3xl object-cover shadow-2xl shadow-primary/20"
           >
@@ -43,6 +44,7 @@
     <!-- =============================== -->
     <!--     SAMBUTAN KETUA (BARU)       -->
     <!-- =============================== -->
+    <!-- ... (KODE SAMBUTAN KETUA ANDA, TIDAK BERUBAH) ... -->
     <section id="sambutan" class="bg-slate-50 py-24 lg:py-32">
       <div class="container mx-auto grid grid-cols-1 gap-12 px-4 lg:grid-cols-2 lg:items-center lg:gap-24 lg:px-8">
         <!-- Kolom Gambar -->
@@ -66,15 +68,15 @@
             "Matematika bukan hanya tentang angka, tetapi tentang pola, logika, dan keindahan struktur. Di HIMATIKA, kami membangun jembatan antara teori dan aplikasi nyata."
           </blockquote>
           <h4 class="mt-8 font-display text-xl font-semibold text-slate-900">
-            [Nama Ketua Umum Anda]
+            Adriyan Pakaya
           </h4>
-          <p class="text-base text-slate-500">Ketua Umum HIMATIKA Periode 2024/2025</p>
+          <p class="text-base text-slate-500">Ketua Umum HMMatika Periode 2024/2025</p>
         </div>
       </div>
     </section>
 
     <!-- =============================== -->
-    <!--       ARTIKEL BLOG (BARU)       -->
+    <!--       ARTIKEL BLOG (UPDATED)    -->
     <!-- =============================== -->
     <section id="blog-home" class="bg-white py-24 lg:py-32">
       <div class="container mx-auto px-4 lg:px-8">
@@ -91,37 +93,35 @@
 
         <!-- Grid Blog Card -->
         <!-- 
-          Kita gunakan v-if="latestPosts" untuk memastikan data sudah ada
-          sebelum mencoba menampilkannya.
+          Kita ganti 'latestPosts' menjadi 'latestPostsFromAPI'
+          untuk lebih jelas
         -->
-        <div v-if="latestPosts && latestPosts.length > 0" class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div v-if="latestPostsFromAPI && latestPostsFromAPI.length > 0" class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <!-- 
-            Kita looping (v-for) data 'latestPosts' yang kita ambil
-            dari <script setup> di bawah.
+            Looping data dari API.
+            Perhatikan perubahan 'post.post_image', 'post.post_title', dll.
           -->
           <div 
-            v-for="post in latestPosts" 
-            :key="post._path"
+            v-for="post in latestPostsFromAPI" 
+            :key="post.post_id"
             class="group transform overflow-hidden rounded-2xl border border-gray-200/70 bg-white shadow-md transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10"
           >
             <!-- 
-              Gunakan NuxtLink untuk mengarahkan ke halaman detail artikel
-              :to="post._path" akan otomatis mengarah ke /blog/nama-artikel-anda
+              PENTING: :to link sekarang menggunakan 'post.post_name' (slug)
             -->
-            <NuxtLink :to="post._path">
+            <NuxtLink :to="`/blog/${post.post_name}`">
               <img 
-                :src="post.image || 'https://placehold.co/600x400/5222e3/white?text=HMMatika'" 
-                :alt="post.title"
+                :src="post.post_image || 'https://placehold.co/600x400/5222e3/white?text=HIMATIKA'" 
+                :alt="post.post_title"
                 class="h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105"
               >
               
               <div class="p-6">
                 <h3 class="font-display text-xl font-semibold text-slate-800 line-clamp-2">
-                  {{ post.title }}
+                  {{ post.post_title }}
                 </h3>
-                <p class="mt-2 text-sm text-slate-600 line-clamp-3">
-                  {{ post.description }}
-                </p>
+                <!-- Kita gunakan 'post_excerpt' untuk deskripsi singkat -->
+                <p class="mt-2 text-sm text-slate-600 line-clamp-3" v-html="post.post_excerpt"></p>
                 <span class="mt-4 inline-block text-sm font-semibold text-primary">
                   Baca Selengkapnya &rarr;
                 </span>
@@ -143,17 +143,24 @@
 </template>
 
 <script setup>
-// Menetapkan Judul Halaman khusus untuk Beranda
 useHead({
-  title: 'Beranda' // Ini akan menjadi "Beranda - HMMatika"
+  title: 'Beranda'
 })
 
-// Mengambil 3 artikel terbaru dari folder /content/blog
-// 'sort' diurutkan berdasarkan tanggal 'desc' (terbaru dulu)
-const { data: latestPosts } = await useAsyncData('latest-posts', () => 
-  queryContent('/blog')
-    .sort({ date: -1 }) // -1 = descending (terbaru)
-    .limit(3)
-    .find()
-)
+const { data: apiResponse } = await useFetch('https://gopos.id/wp-json/wp/v2/posts?_embed');
+
+// Buat computed property untuk mengambil 3 post pertama saja
+const latestPostsFromAPI = computed(() => {
+  if (apiResponse.value && Array.isArray(apiResponse.value)) {
+    return apiResponse.value.slice(0, 3).map(post => ({
+      post_id: post.id,
+      post_name: post.slug,
+      post_title: post.title.rendered,
+      post_excerpt: post.excerpt.rendered,
+      post_image: post._embedded?.['wp:featuredmedia']?.[0]?.source_url || null
+    }));
+  }
+  return [];
+});
 </script>
+

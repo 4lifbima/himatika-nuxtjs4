@@ -108,7 +108,7 @@
           <p class="mt-3 text-sm text-slate-600">
             Himpunan Mahasiswa Matematika.
             <br>
-            Universitas [Nama Universitas Anda]
+            Universitas Negeri Gorontalo
           </p>
           <p class="mt-2 text-sm text-slate-600">
             [Alamat Sekretariat Anda]
