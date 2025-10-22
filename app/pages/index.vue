@@ -32,9 +32,9 @@
         </div>
         <div class="hidden lg:block">
           <img 
-            src="https://images.unsplash.com/photo-1596496181848-3013d4405a40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzg3NDZ8&ixlib=rb-4.0.3&q=80&w=1080" 
+            src="/icon-himatika.png" 
             alt="Ilustrasi Matematika Abstrak" 
-            class="h-full w-full rounded-3xl object-cover shadow-2xl shadow-primary/20"
+            class="h-full w-full rounded-3xl object-cover"
           >
           
         </div>
@@ -51,8 +51,7 @@
         <div class="relative mx-auto w-full max-w-md">
           <div class="absolute -bottom-4 -right-4 h-full w-full rounded-3xl bg-primary"></div>
           <img 
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzOTcyMjJ8&ixlib=rb-4.0.3&q=80&w=1080" 
-            alt="Foto Ketua Umum HMMatika"
+            src="/member/ketum.png"
             class="relative h-full w-full rounded-3xl object-cover shadow-2xl"
           >
           
@@ -65,7 +64,7 @@
             Dari Ketua Umum
           </h2>
           <blockquote class="mt-6 border-l-4 border-primary pl-6 text-lg italic leading-relaxed text-slate-600 md:text-xl">
-            "Matematika bukan hanya tentang angka, tetapi tentang pola, logika, dan keindahan struktur. Di HIMATIKA, kami membangun jembatan antara teori dan aplikasi nyata."
+            "Matematika bukan hanya tentang angka, tetapi tentang pola, logika, dan keindahan struktur. Di HIMATIKA, kami membangun jembatan antara teori dan aplikasi nyata. Ini adalah bidang studi yang mengorganisir teori, metode, dan teorema untuk kebutuhan ilmu pengetahuan dan matematika itu sendiri, dengan dua cabang utama: matematika murni (konsep abstrak) dan matematika terapan (penerapan pada disiplin lain seperti fisika dan teknik). "
           </blockquote>
           <h4 class="mt-8 font-display text-xl font-semibold text-slate-900">
             Adriyan Pakaya

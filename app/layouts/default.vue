@@ -8,7 +8,7 @@
       <nav class="container mx-auto flex items-center justify-between p-4 lg:px-8">
         <!-- Logo -->
         <NuxtLink to="/" class="text-2xl font-bold font-display text-primary">
-          HIMATIKA
+          <img src="/horizontal.png" class="w-52" alt="">
         </NuxtLink>
         
         <!-- Navigasi Desktop -->
@@ -102,8 +102,8 @@
         
         <!-- Kolom 1: Logo & Deskripsi -->
         <div>
-          <NuxtLink to="/" class="text-2xl font-bold font-display text-primary">
-            HIMATIKA
+          <NuxtLink to="/" class="text-xl font-display text-primary">
+            <img src="/horizontal.png" class="w-52" alt="">
           </NuxtLink>
           <p class="mt-3 text-sm text-slate-600">
             Himpunan Mahasiswa Matematika.
