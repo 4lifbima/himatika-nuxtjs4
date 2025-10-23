@@ -228,7 +228,14 @@
 import ketum from '/member/ketum.png'
 import icon from '/icon-himatika.png'
 useHead({
-  title: 'Beranda'
+  title: 'Beranda',
+  meta :[
+    { property: 'og:title', content: 'Beranda' },
+    { property: 'og:description', content: 'Selamat datang di website resmi Himpunan Mahasiswa Matematika. Eksplorasi Simetri Tak Terbatas.' },
+    { property: 'og:image', content: 'https://himatika-nuxtjs.vercel.app/icon-himatika.png' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://himatika-nuxtjs.vercel.app' },
+  ]
 })
 
 const { data: apiResponse } = await useFetch('https://gopos.id/wp-json/wp/v2/posts?_embed');

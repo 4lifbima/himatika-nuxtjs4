@@ -41,6 +41,13 @@
 <script setup>
 // Menetapkan Judul Halaman
 useHead({
-  title: 'Galeri'
+  title: 'Galeri',
+  meta :[
+    { property: 'og:title', content: 'Galeri Kita' },
+    { property: 'og:description', content: 'Momen-momen berharga yang terekam selama kegiatan kami.' },
+    { property: 'og:image', content: 'https://himatika-nuxtjs.vercel.app/icon-himatika.png' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://himatika-nuxtjs.vercel.app' },
+  ]
 })
 </script>
