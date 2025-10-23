@@ -21,7 +21,7 @@
         >
           <NuxtLink :to="`/blog/${post.post_name}`">
             <img 
-              :src="post.post_image || 'https://placehold.co/600x400/5222e3/white?text=HMMatika'" 
+              :src="post.post_image || 'https://placehold.co/600x400/5222e3/white?text=HIMATIKA'" 
               :alt="post.post_title"
               class="h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
@@ -78,7 +78,7 @@ useHead({
     { name: 'description', content: 'Kumpulan artikel, berita, dan wawasan terbaru dari Himpunan Mahasiswa Matematika.' },
     { property: 'og:title', content: 'Semua Artikel | HIMATIKA' },
     { property: 'og:description', content: 'Kumpulan artikel, berita, dan wawasan terbaru dari Himpunan Mahasiswa Matematika.' },
-    { property: 'og:image', content: 'https://placehold.co/1200x630/5222e3/ffffff?text=HMMatika+Blog' },
+    { property: 'og:image', content: 'https://placehold.co/1200x630/5222e3/ffffff?text=HIMATIKA+Blog' },
     { property: 'og:type', content: 'website' }
   ]
 })

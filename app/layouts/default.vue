@@ -140,11 +140,9 @@
         <div>
           <h4 class="font-display text-sm font-semibold uppercase tracking-wider text-slate-800">Ikuti Kami</h4>
           <div class="mt-4 flex space-x-4">
-            <a href="#" class="text-slate-500 transition-colors hover:text-primary" aria-label="Instagram">
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd" d="M12.315 2c-4.02.052-4.854.204-6.538.86-1.63.636-2.9.926-4.24 2.268-1.338 1.343-1.63 2.61-2.268 4.24C-.53 10.832-.68 11.666-.73 15.685c-.055 4.018.098 4.852.758 6.536.636 1.63 1.606 2.9 2.9 4.24 1.343 1.338 2.61 1.63 4.24 2.268 1.684.656 2.518.808 6.536.758 4.018-.05 4.852-.198 6.536-.758 1.63-.636 2.9-1.606 4.24-2.9 1.338-1.343 1.63-2.61 2.268-4.24.656-1.684.808-2.518.758-6.536-.05-4.018-.198-4.852-.758-6.536-.636-1.63-1.606-2.9-2.9-4.24-1.343-1.338-2.61-1.63-4.24-2.268C17.168 2.204 16.334 2.052 12.315 2zM8 12a4 4 0 1 1 8 0 4 4 0 0 1-8 0zm11-4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" clip-rule="evenodd" />
-              </svg>
-            </a>
+                <GlobeAltIcon class="h-6 w-6 text-gray-600 hover:text-primary" />
+                <EnvelopeIcon class="h-6 w-6 text-gray-600 hover:text-primary" />
+                <HeartIcon class="h-6 w-6 text-gray-600 hover:text-primary" />
           </div>
         </div>
         
@@ -162,6 +160,8 @@
 </template>
 
 <script setup>
+import { GlobeAltIcon, EnvelopeIcon } from '@heroicons/vue/24/outline'
+import { HeartIcon } from '@heroicons/vue/24/outline'
 import { ref } from 'vue'
 
 // Ini adalah state untuk mengontrol menu mobile

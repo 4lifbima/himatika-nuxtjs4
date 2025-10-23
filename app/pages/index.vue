@@ -32,7 +32,7 @@
         </div>
         <div class="hidden lg:block">
           <img 
-            src="/icon-himatika.png" 
+            :src="icon" 
             alt="Ilustrasi Matematika Abstrak" 
             class="h-full w-full rounded-3xl object-cover"
           >
@@ -51,7 +51,7 @@
         <div class="relative mx-auto w-full max-w-md">
           <div class="absolute -bottom-4 -right-4 h-full w-full rounded-3xl bg-primary"></div>
           <img 
-            src="/member/ketum.png"
+            :src="ketum"
             class="relative h-full w-full rounded-3xl object-cover shadow-2xl"
           >
           
@@ -69,7 +69,7 @@
           <h4 class="mt-8 font-display text-xl font-semibold text-slate-900">
             Adriyan Pakaya
           </h4>
-          <p class="text-base text-slate-500">Ketua Umum HMMatika Periode 2024/2025</p>
+          <p class="text-base text-slate-500">Ketua Umum HIMATIKA Periode 2025/202</p>
         </div>
       </div>
     </section>
@@ -138,10 +138,95 @@
       </div>
     </section>
 
+    <section id="proker" class="bg-white py-24 lg:py-32">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center">
+        <span class="font-semibold uppercase tracking-wider text-primary">Aktivitas Kami</span>
+        <h2 class="mt-2 font-display text-4xl font-bold tracking-tight text-slate-900 lg:text-5xl">
+          Program Unggulan
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Beberapa program kerja utama kami yang dirancang untuk mengembangkan potensi mahasiswa.
+        </p>
+      </div>
+
+      <div class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="group transform overflow-hidden rounded-2xl border border-gray-200/70 bg-white shadow-md transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzg4NTR8&ixlib=rb-4.0.3&q=80&w=1080" class="h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105" alt="Pelatihan">
+          
+          <div class="p-6">
+            <h3 class="font-display text-xl font-semibold text-slate-800">Mathematics Olympiad</h3>
+            <p class="mt-2 text-sm text-slate-600">Kompetisi matematika tahunan tingkat regional untuk mengasah kemampuan analisis dan pemecahan masalah.</p>
+            <span class="mt-4 inline-block text-sm font-semibold text-primary">Divisi Akademik</span>
+          </div>
+        </div>
+
+        <div class="group transform overflow-hidden rounded-2xl border border-gray-200/70 bg-white shadow-md transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzg4NzZ8&ixlib=rb-4.0.3&q=80&w=1080" class="h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105" alt="Seminar">
+
+          <div class="p-6">
+            <h3 class="font-display text-xl font-semibold text-slate-800">Seminar Nasional "Data Science"</h3>
+            <p class="mt-2 text-sm text-slate-600">Menghadirkan pakar industri untuk membahas tren terbaru di bidang data science dan big data.</p>
+            <span class="mt-4 inline-block text-sm font-semibold text-primary">Divisi Humas</span>
+          </div>
+        </div>
+
+        <div class="group transform overflow-hidden rounded-2xl border border-gray-200/70 bg-white shadow-md transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzg5MDN8&ixlib=rb-4.0.3&q=80&w=1080" class="h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105" alt="Pengabdian">
+          
+          <div class="p-6">
+            <h3 class="font-display text-xl font-semibold text-slate-800">Bakti Sosial & Desa Binaan</h3>
+            <p class="mt-2 text-sm text-slate-600">Program pengabdian masyarakat untuk mengaplikasikan ilmu matematika dalam kehidupan sehari-hari.</p>
+            <span class="mt-4 inline-block text-sm font-semibold text-primary">Divisi Sosial</span>
+          </div>
+        </div>
+
+        </div>
+    </div>
+  </section>
+  <section id="galeri" class="bg-slate-900 py-24 lg:py-32">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="font-display text-4xl font-bold tracking-tight text-white lg:text-5xl">
+          Galeri Kegiatan
+        </h2>
+        <p class="mt-4 text-lg text-slate-300">
+          Momen-momen berharga yang terekam selama kegiatan kami.
+        </p>
+      </div>
+      
+      <div class="mt-16 grid grid-cols-2 grid-rows-2 gap-4 md:grid-cols-4">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzg5Nzh8&ixlib=rb-4.0.3&q=80&w=1080" 
+             alt="Foto Galeri 1" 
+             class="col-span-2 row-span-2 h-full w-full rounded-2xl object-cover shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/30">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzg5Nzh8&ixlib=rb-4.0.3&q=80&w=1080" 
+             alt="Foto Galeri 2" 
+             class="h-full w-full rounded-2xl object-cover shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/30">
+        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzkwMDJ8&ixlib=rb-4.0.3&q=80&w=1080" 
+             alt="Foto Galeri 3" 
+             class="h-full w-full rounded-2xl object-cover shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/30">
+        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzkwMjR8&ixlib=rb-4.0.3&q=80&w=1080" 
+             alt="Foto Galeri 4" 
+             class="h-full w-full rounded-2xl object-cover shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/30">
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzkwNDR8&ixlib=rb-4.0.3&q=80&w=1080" 
+             alt="Foto Galeri 5" 
+             class="h-full w-full rounded-2xl object-cover shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/30">
+        
+        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzkxMTF8&ixlib=rb-4.0.3&q=80&w=1080" 
+             alt="Foto Galeri 6" 
+             class="h-full w-full rounded-2xl object-cover shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/30">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzkxMzB8&ixlib-rb-4.0.3&q=80&w=1080" 
+             alt="Foto Galeri 7" 
+             class="col-span-2 h-full w-full rounded-2xl object-cover shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/30">
+      </div>
+    </div>
+  </section>
   </div>
 </template>
 
 <script setup>
+import ketum from '/member/ketum.png'
+import icon from '/icon-himatika.png'
 useHead({
   title: 'Beranda'
 })

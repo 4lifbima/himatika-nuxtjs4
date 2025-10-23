@@ -24,9 +24,6 @@
 
         <div class="group transform overflow-hidden rounded-2xl border border-gray-200/70 bg-white shadow-md transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
           <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzIzMzg4NzZ8&ixlib=rb-4.0.3&q=80&w=1080" class="h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105" alt="Seminar">
-          
-
-[Image of professional seminar]
 
           <div class="p-6">
             <h3 class="font-display text-xl font-semibold text-slate-800">Seminar Nasional "Data Science"</h3>
@@ -53,6 +50,13 @@
 <script setup>
 // Menetapkan Judul Halaman
 useHead({
-  title: 'Program Kerja'
+  title: 'Program Kerja',
+  meta :[
+    { property: 'og:title', content: 'Program Kerja' },
+    { property: 'og:description', content: 'Proker proker yang akan di laksanakan di HIMATIKA periode 2025/2026' },
+    { property: 'og:image', content: 'https://himatika-nuxtjs.vercel.app/icon-himatika.png' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://himatika-nuxtjs.vercel.app' },
+  ]
 })
 </script>

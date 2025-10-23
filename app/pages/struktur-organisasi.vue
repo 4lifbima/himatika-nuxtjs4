@@ -45,34 +45,55 @@
         <!-- Tingkat 3: Kepala Divisi -->
         <div class="w-full max-w-5xl">
           <h3 class="mb-10 text-center font-display text-2xl font-semibold text-slate-900">
-            Divisi & Departemen
+            Ketua ketua Bidang  
           </h3>
           <div class="grid grid-cols-2 gap-x-8 gap-y-10 md:grid-cols-4">
             <!-- Contoh Divisi 1 -->
             <div class="flex flex-col items-center text-center border border-primary py-6 px-4 rounded-xl">
               <img class="h-28 w-28 rounded-full object-cover shadow-lg" src="https://placehold.co/200x200/ededed/555?text=Foto" alt="Foto Kadiv">
               <h3 class="mt-4 font-display text-lg font-semibold text-slate-900">Nama Kepala Divisi</h3>
-              <p class="text-sm font-medium text-primary">Kabid. Akademik</p>
+              <p class="text-sm font-medium text-primary">Kabid. Kerohanian</p>
             </div>
             <!-- Contoh Divisi 2 -->
             <div class="flex flex-col items-center text-center border border-primary py-6 px-4 rounded-xl">
               <img class="h-28 w-28 rounded-full object-cover shadow-lg" src="https://placehold.co/200x200/ededed/555?text=Foto" alt="Foto Kadiv">
               <h3 class="mt-4 font-display text-lg font-semibold text-slate-900">Nama Kepala Divisi</h3>
-              <p class="text-sm font-medium text-primary">Kabid. Humas</p>
+              <p class="text-sm font-medium text-primary">Kabid. Penalaran & Keilmuan</p>
             </div>
             <!-- Contoh Divisi 3 -->
             <div class="flex flex-col items-center text-center border border-primary py-6 px-4 rounded-xl">
               <img class="h-28 w-28 rounded-full object-cover shadow-lg" src="https://placehold.co/200x200/ededed/555?text=Foto" alt="Foto Kadiv">
               <h3 class="mt-4 font-display text-lg font-semibold text-slate-900">Nama Kepala Divisi</h3>
-              <p class="text-sm font-medium text-primary">Kabid. Sosial</p>
+              <p class="text-sm font-medium text-primary">Kabid. PPM</p>
             </div>
             <!-- Contoh Divisi 4 -->
             <div class="flex flex-col items-center text-center border border-primary py-6 px-4 rounded-xl">
               <img class="h-28 w-28 rounded-full object-cover shadow-lg" src="https://placehold.co/200x200/ededed/555?text=Foto" alt="Foto Kadiv">
               <h3 class="mt-4 font-display text-lg font-semibold text-slate-900">Nama Kepala Divisi</h3>
-              <p class="text-sm font-medium text-primary">Kabid. PSDM</p>
+              <p class="text-sm font-medium text-primary">Kabid. Advokasi & Pengmas</p>
             </div>
-            <!-- Tambahkan divisi lain di sini -->
+
+            <div class="flex flex-col items-center text-center border border-primary py-6 px-4 rounded-xl">
+              <img class="h-28 w-28 rounded-full object-cover shadow-lg" src="https://placehold.co/200x200/ededed/555?text=Foto" alt="Foto Kadiv">
+              <h3 class="mt-4 font-display text-lg font-semibold text-slate-900">Nama Sekbid Divisi</h3>
+              <p class="text-sm font-medium text-primary">Sekbid. Advokasi & Pengmas</p>
+            </div>
+            <div class="flex flex-col items-center text-center border border-primary py-6 px-4 rounded-xl">
+              <img class="h-28 w-28 rounded-full object-cover shadow-lg" src="https://placehold.co/200x200/ededed/555?text=Foto" alt="Foto Kadiv">
+              <h3 class="mt-4 font-display text-lg font-semibold text-slate-900">Nama Sekbid Divisi</h3>
+              <p class="text-sm font-medium text-primary">Sekbid. Advokasi & Pengmas</p>
+            </div>
+            <div class="flex flex-col items-center text-center border border-primary py-6 px-4 rounded-xl">
+              <img class="h-28 w-28 rounded-full object-cover shadow-lg" src="https://placehold.co/200x200/ededed/555?text=Foto" alt="Foto Kadiv">
+              <h3 class="mt-4 font-display text-lg font-semibold text-slate-900">Nama Sekbid Divisi</h3>
+              <p class="text-sm font-medium text-primary">Sekbid. Advokasi & Pengmas</p>
+            </div>
+            <div class="flex flex-col items-center text-center border border-primary py-6 px-4 rounded-xl">
+              <img class="h-28 w-28 rounded-full object-cover shadow-lg" src="https://placehold.co/200x200/ededed/555?text=Foto" alt="Foto Kadiv">
+              <h3 class="mt-4 font-display text-lg font-semibold text-slate-900">Nama Sekbid Divisi</h3>
+              <p class="text-sm font-medium text-primary">Sekbid. Advokasi & Pengmas</p>
+            </div>
+            
           </div>
         </div>
 
@@ -83,6 +104,13 @@
 
 <script setup>
 useHead({
-  title: 'Struktur Organisasi'
+  title: 'Struktur Organisasi',
+  meta :[
+    { property: 'og:title', content: 'Struktur Organisasi' },
+    { property: 'og:description', content: 'Struktur Kepengurusan Kabinet HIMATIKA periode 2025/2026' },
+    { property: 'og:image', content: 'https://himatika-nuxtjs.vercel.app/icon-himatika.png' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://himatika-nuxtjs.vercel.app' },
+  ]
 })
 </script>

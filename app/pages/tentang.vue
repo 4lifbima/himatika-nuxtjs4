@@ -48,6 +48,13 @@
 <script setup>
 // Menetapkan Judul Halaman
 useHead({
-  title: 'Tentang Kami'
+  title: 'Tentang Kami',
+  meta :[
+    { property: 'og:title', content: 'Tentang Kami' },
+    { property: 'og:description', content: 'Membentuk insan matematis yang berintegritas, inovatif, dan berdampak bagi masyarakat.' },
+    { property: 'og:image', content: 'https://himatika-nuxtjs.vercel.app/icon-himatika.png' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://himatika-nuxtjs.vercel.app' },
+  ]
 })
 </script>
